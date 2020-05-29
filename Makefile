@@ -1,9 +1,9 @@
 
 all: test help
 
-help: docs/dictmod.md
+help: docs/dictmod.txt
 
-docs/dictmod.md: dictmod/__init__.py
+docs/dictmod.txt: dictmod/__init__.py
 	pydoc dictmod > $@
 
 test:
